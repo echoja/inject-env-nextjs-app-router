@@ -1,3 +1,5 @@
+"use client";
+
 import { getAPIEndpoint } from "@/lib/config";
 import useSWR from "swr";
 

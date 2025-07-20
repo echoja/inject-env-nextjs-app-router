@@ -14,7 +14,6 @@ console.log("Environment file created at:", envFilePath);
 
 const nextConfig: NextConfig = {
   /* config options here */
-  reactStrictMode: true,
 };
 
 export default nextConfig;
