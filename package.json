@@ -1,0 +1,25 @@
+{
+  "name": "inject-env-page-router",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:local-docker": "docker build --force-rm=true -t inject-env-page-router .",
+    "start:local-docker": "docker run -p 3000:3000 --rm -it -e API_ENDPOINT=https://jsonplaceholder.typicode.com inject-env-page-router"
+  },
+  "dependencies": {
+    "next": "15.4.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "swr": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
